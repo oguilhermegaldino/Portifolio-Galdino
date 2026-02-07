@@ -2,51 +2,161 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Galdino — Direção e Produção Criativa</title>
+    <title>Galdino — Direção Criativa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #111;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        header p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 30px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 40px 20px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="hero">
+<header>
     <h1>Galdino</h1>
     <p>Direção e Produção Criativa</p>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contato">Contato</a>
+    </nav>
 </header>
 
-<section class="section">
+<section id="sobre" class="section">
     <h2>Sobre</h2>
     <p>
-        Estudante de teatro com foco em direção e produção artística.
-        Interessa-se por projetos autorais e linguagem contemporânea.
+        Estudante de teatro com foco em direção e produção.
+        Interessa-se por projetos autorais, linguagem contemporânea
+        e processos criativos independentes.
     </p>
+</section>
+
+<section id="portfolio" class="section">
+    <h2>Projetos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Projeto 1</h3>
+            <p>Descrição breve do trabalho.</p>
+        </div>
+
+        <div class="card">
+            <h3>Projeto 2</h3>
+            <p>Descrição breve do trabalho.</p>
+        </div>
+
+        <div class="card">
+            <h3>Projeto 3</h3>
+            <p>Descrição breve do trabalho.</p>
+        </div>
+    </div>
 </section>
 
 <section id="feedback" class="section">
     <h2>Feedback de Projetos</h2>
 
-    <p>
-        Envie seu projeto artístico ou audiovisual para receber uma análise
-        conceitual e estrutural.
-    </p>
+    <div class="cards">
+        <div class="card">
+            <h3>Análise de projeto artístico</h3>
 
-    <h3>O que você recebe</h3>
-    <ul>
-        <li>Análise do material enviado</li>
-        <li>Sugestões conceituais</li>
-        <li>Apontamentos de direção</li>
-        <li>Resposta em texto</li>
-    </ul>
+            <p>
+                Feedback conceitual e estrutural sobre direção,
+                dramaturgia e viabilidade.
+            </p>
 
-    <h3>Prazo</h3>
-    <p>Até 5 dias úteis.</p>
+            <p class="price">R$80</p>
 
-    <h3>Valor</h3>
-    <p><strong>R$80 por projeto</strong></p>
-
-    <a class="botao" href="#">Solicitar feedback</a>
+            <a class="button" href="#">
+                Solicitar feedback
+            </a>
+        </div>
+    </div>
 </section>
+
+<section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Email: seuemail@email.com</p>
+    <p>Instagram: @seuusuario</p>
+</section>
+
+<footer>
+    © Galdino — Direção Criativa
+</footer>
 
 </body>
 </html>
