@@ -5,6 +5,8 @@ body {
     color: #111;
 }
 
+/* Cabeçalho */
+
 .hero {
     background: #000;
     color: #fff;
@@ -12,13 +14,18 @@ body {
     padding: 80px 20px;
 }
 
+/* Seções centralizadas */
+
 .section {
     padding: 60px 20px;
     max-width: 700px;
     margin: auto;
     background: #fff;
     margin-top: 20px;
+    text-align: center;
 }
+
+/* Espaçamento elegante no feedback */
 
 #feedback p {
     margin-bottom: 30px;
@@ -32,7 +39,11 @@ body {
 
 #feedback ul {
     margin-bottom: 40px;
+    list-style-position: inside;
+    padding-left: 0;
 }
+
+/* Botão */
 
 .botao {
     display: inline-block;
