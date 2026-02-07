@@ -1,16 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
     background: #f4f4f4;
     color: #111;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
 }
-
-/* HERO */
 
 .hero {
     background: #000;
@@ -19,93 +12,27 @@ body {
     padding: 80px 20px;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.hero p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #ccc;
-}
-
-/* SEÇÕES */
-
 .section {
-    padding: 80px 20px;
-}
-
-.container {
-    max-width: 720px;
+    padding: 60px 20px;
+    max-width: 700px;
     margin: auto;
-}
-
-/* SOBRE */
-
-.sobre h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-/* FEEDBACK */
-
-.feedback h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.feedback .intro {
-    margin-bottom: 50px;
-    font-size: 17px;
-    color: #333;
-}
-
-/* CARD DO FEEDBACK */
-
-.card {
     background: #fff;
-    padding: 40px;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-top: 20px;
 }
 
-.card h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.card ul {
-    margin-bottom: 40px;
-    padding-left: 20px;
+#feedback p {
+    margin-bottom: 30px;
     line-height: 1.8;
 }
 
-.info {
-    display: flex;
-    justify-content: space-between;
+#feedback h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#feedback ul {
     margin-bottom: 40px;
 }
-
-.info h4 {
-    margin-bottom: 5px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #666;
-}
-
-.preco {
-    font-size: 22px;
-    font-weight: 500;
-}
-
-/* BOTÃO */
 
 .botao {
     display: inline-block;
@@ -113,20 +40,5 @@ body {
     background: #000;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.botao:hover {
-    background: #333;
-}
-
-/* RODAPÉ */
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 14px;
-    color: #666;
+    margin-top: 20px;
 }
