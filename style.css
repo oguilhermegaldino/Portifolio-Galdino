@@ -1,82 +1,132 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f5f5;
-    color: #111;
+* {
+    box-sizing: border-box;
 }
 
-header {
+body {
+    margin: 0;
+    background: #f4f4f4;
+    color: #111;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
     background: #000;
     color: #fff;
-    padding: 40px 20px;
     text-align: center;
+    padding: 80px 20px;
 }
 
-header h1 {
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
     margin: 0;
-    font-size: 32px;
+    letter-spacing: 1px;
 }
 
-header p {
+.hero p {
     margin-top: 10px;
     font-size: 18px;
     color: #ccc;
 }
 
+/* SEÇÕES */
+
 .section {
-    padding: 40px 20px;
-    max-width: 800px;
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 720px;
     margin: auto;
+}
+
+/* SOBRE */
+
+.sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* FEEDBACK */
+
+.feedback h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.feedback .intro {
+    margin-bottom: 50px;
+    font-size: 17px;
+    color: #333;
+}
+
+/* CARD DO FEEDBACK */
+
+.card {
     background: #fff;
-    margin-top: 20px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-h2 {
+.card h3 {
     margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
-ul {
+.card ul {
+    margin-bottom: 40px;
     padding-left: 20px;
+    line-height: 1.8;
 }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.info h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* BOTÃO */
 
 .botao {
     display: inline-block;
-    padding: 14px 26px;
+    padding: 14px 28px;
     background: #000;
     color: #fff;
     text-decoration: none;
-    margin-top: 30px;
-    font-size: 15px;
-    letter-spacing: 0.5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
 }
 
-/* Espaçamento elegante do feedback */
-
-#feedback {
-    max-width: 600px;
+.botao:hover {
+    background: #333;
 }
 
-#feedback h2 {
-    margin-bottom: 30px;
-}
+/* RODAPÉ */
 
-#feedback p {
-    margin-bottom: 30px;
-    line-height: 1.8;
-}
-
-#feedback h3 {
-    margin-top: 50px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-#feedback ul {
-    margin-bottom: 40px;
-    padding-left: 22px;
-    line-height: 1.8;
-}
-
-#feedback .botao {
-    margin-top: 40px;
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #666;
 }
